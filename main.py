@@ -1,4 +1,4 @@
-import pygame, sys, time
+import sys, time, pygame
 from object import Object
 from random import randint
 
@@ -140,7 +140,6 @@ percentage_control = False
 
 def regenerate_numbers():
     global lst, number_of_questions, random_number_control, lst_rect, lst_rendered_contents,lst_answer, lst_user_answer, low_number, med_number, high_number
-    
     if low_number == True:
         number_of_questions = current_nback * 2
     elif med_number == True:
@@ -170,7 +169,6 @@ def regenerate_numbers():
 
         # user answer list
         lst_user_answer = [" " for _ in range(len(lst_answer))]
-
         # make each element invisible
         for each in lst_rect:
             each.x = -200
@@ -178,7 +176,6 @@ def regenerate_numbers():
 
 
 def play_sound(filename = None, volume = 1, loop = False, channel = -1):
-    
     if channel == -1 and backgroundsound == 1:
         sound = pygame.mixer.Sound(filename)
         if volume != 1:
@@ -223,7 +220,6 @@ def reset_all_sound_flags():
 
 def mute_background_sound_flags():
     global main_sound_channel, game_sound_channel, score_sound_channel, pause_sound_channel
-    
     main_sound_channel.set_volume(0)
     game_sound_channel.set_volume(0)
     score_sound_channel.set_volume(0)
@@ -232,7 +228,6 @@ def mute_background_sound_flags():
 
 def resume_background_sound_flags():
     global main_sound_channel, game_sound_channel, score_sound_channel, pause_sound_channel
-
     main_sound_channel.set_volume(1)
     game_sound_channel.set_volume(1)
     score_sound_channel.set_volume(0.5)
@@ -241,7 +236,6 @@ def resume_background_sound_flags():
 
 
 def multiline_text(screen,size,text,color,coor,linespace= 10):
-    
     text_list = text.splitlines()
     for i,e in enumerate(text_list):
         font = pygame.font.Font("KGPrimaryPenmanship.ttf",size)
@@ -259,7 +253,6 @@ def show_text(screen,text,coor,color,size):
 
 # buttons
 class Button:
-    
     def __init__(self, font_name, size, x, y, color, text, center = False, image = False, imagefile_name = None):
         self.click_sound = pygame.mixer.Sound("sound/click.wav")
         self.image = image
@@ -268,7 +261,6 @@ class Button:
             self.color = color
             self.text = text
             self.size = size
-
             self.font_kind = pygame.font.Font(self.font_name, size)
             self.content = self.font_kind.render(self.text,True, self.color)
             self.rect = self.content.get_rect()
@@ -280,10 +272,8 @@ class Button:
         #if I want to make it centered automatically
         if center == True:
             self.rect.center = x, y
-        
         self.clicked = False
         self.hand = False
-
         self.move = 100
 
 
@@ -370,7 +360,6 @@ class Button:
 
     def key_movement(self):
         global main,run
-
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -403,18 +392,11 @@ class Button:
             self.move = 100
 
     def disappear(self):
-        self.rect.center = -2000,-2000
+        self.rect.center = -2000, -2000
     
-    def update_position(self,x,y):
+    def update_position(self, x, y):
         self.rect.x = x
         self.rect.y = y
-
-
-
-
-
-
-        
 
 """From here is instantiations and calling functions """
 
@@ -436,7 +418,6 @@ main_exit_button = Button("8bitwonder.ttf", 32, screenwidth / 2, 620, color['whi
 # Main Menu key scroll X
 main_x_button = Button("8bitwonder.ttf", 24, screenwidth / 2 - 200, 0, color['white'], "*", False)
 
-
 # How to play buttons
 howtoplay_title_button = Button("8bitwonder.ttf", 32, 250, 220, color['white'], "How to play")
 howtoplay_back_button = Button("8bitwonder.ttf", 42, 250, 520, color['white'], "Back")
@@ -451,16 +432,11 @@ howtoplay_title_button.rect.center = screenwidth / 2, screenheight / 2 - 300
 howtoplay_back_button.rect.center = screenwidth / 2, screenheight / 2 + 300
 lst_practice_answer = [" "," "]
 
-
-
-
-
 # Credit Menu buttons
 credit_title_button = Button("8bitwonder.ttf", 42, 250, 220, color['white'], "Creator")
 credit_made_by_button = Button("8bitwonder.ttf", 64, 250, 320, color['white'], "Jinsung Kim")
 credit_back_button = Button("8bitwonder.ttf", 42, 250, 520, color['white'], "Back")
 credit_email = "jsk.jinsung@gmail.com"
-
 credit_title_button.rect.center = screenwidth / 2, screenheight / 2 - 200
 credit_made_by_button.rect.center = screenwidth / 2, screenheight / 2 - 100
 credit_back_button.rect.center = screenwidth / 2, screenheight / 2 + 200
@@ -471,24 +447,20 @@ options_n_back_text = Button("gameplay.ttf", 32, 150, 250, color["white"], "# n"
 options_number_of_questions_text1 = Button("8bitwonder.ttf", 20, 150, 400, color["white"], "number", True)
 options_number_of_questions_text2 = Button("8bitwonder.ttf", 20, 150, 430, color["white"], "of", True)
 options_number_of_questions_text3 = Button("8bitwonder.ttf", 20, 150, 460, color["white"], "questions", True)
-
 options_2back = Button("8bitwonder.ttf", 32, 360, 250, color["white"], "2", True)
 options_3back = Button("8bitwonder.ttf", 32, 440, 250, color["white"], "3", True)
 options_4back = Button("8bitwonder.ttf", 32, 520, 250, color["white"], "4", True)
 options_5back = Button("8bitwonder.ttf", 32, 600, 250, color["white"], "5", True)
 options_6back = Button("8bitwonder.ttf", 32, 680, 250, color["white"], "6", True)
-
 options_low_number_of_questions = Button("8bitwonder.ttf", 20, 350, 430, color["white"], "Low", True)
 options_med_number_of_questions = Button("8bitwonder.ttf", 20, 530, 430, color["white"], "Med", True)
 options_high_number_of_questions = Button("8bitwonder.ttf", 20, 710, 430, color["white"], "High", True)
-
 options_back_button = Button("8bitwonder.ttf", 42, 250, 520, color["white"], "Back")
 options_back_button.rect.center = screenwidth / 2, screenheight / 2 + 200
 
 # some underline that indicates where the cursor is
 options_key = Object(5, 5, 32, 3, 1, True, False)
 options_key.rect.center = 357, 280
-
 low_number = True
 med_number = False
 high_number = False
@@ -508,7 +480,6 @@ main_menu_text = Button("gameplay.ttf", 30, screenwidth / 2, 540, color["white"]
 press_esc_text = Button("KGPrimaryPenmanship.ttf", 50, screenwidth / 2, 470, color["white"], "Press <ESC> to continue", True)
 quit_text = Button("gameplay.ttf", 30, screenwidth / 2, 600, color["white"], "Quit", True)
 paused_sound_button = Button("8bitwonder.ttf", 15, 600, 170, color["white"], "Mute sound", False, True, "img/backgroundsound1.png")
-
 
 # current n-back status
 current_nback_text_font = pygame.font.Font("gameplay.ttf", 20)
@@ -542,7 +513,6 @@ counter_for_next_number_content_rect = counter_for_next_number_content.get_rect(
 counter_for_next_number_content_rect.x = -200
 counter_for_next_number_content_rect.y = -200
 
-
 # O, X button
 o_button = Button(None, 13, 524, 530, color["white"], "1", True, True, "img/o.png")
 x_button = Button(None, 13, 284, 530, color["white"], "1", True, True, "img/x.png")
@@ -551,7 +521,6 @@ frame_around_o_x_buttons_rect = frame_around_o_x_buttons.get_rect()
 frame_around_o_x_buttons_rect.center = -200, -200
 
 #########################################################################################
-
 
 
 # score screen
@@ -564,26 +533,17 @@ correct_answers = Button("gameplay.ttf", 20, 165, 410, color["white"], "correct 
 user_answers = Button("gameplay.ttf", 20, 165, 540, color["white"], "your answer", True)
 result_percentage_text = Button("gameplay.ttf", 20, 165, 645, color["white"], "Score", True)
 go_back_to_main_menu_button = Button("gameplay.ttf", 20, 190, 692, color["white"], "Press enter key to go to Main menu")
-
 number_of_correct_questions = 0
-
 n_back_answer = Button("gameplay.ttf", 20, 520, 200, color["white"], str(current_nback), True)
-
-
 
 def update_score():
     global lst_rendered_contents_2, score_update_control
-
     if score_update_control == False:
         score_update_control = True
         for each_n in lst:
             each_number_font = pygame.font.Font("gameplay.ttf", 20)
             each_number_content = each_number_font.render(str(each_n), True, color["white"])
             lst_rendered_contents_2.append(each_number_content)
-
-
-
-
 
 while run:
     update_screen(screen, color["sky blue"])
@@ -593,12 +553,10 @@ while run:
         if main_background_sound_flag == False:
             main_background_sound_flag = True
             play_sound(channel=0)
-            
         for i in range(3):
             screen.blit(bg2, (bg2_width * i + scroll2, 0))
             screen.blit(bg3, (bg3_width * i + scroll3, 0))
             screen.blit(bg4, (bg4_width * i + scroll4, 0))
-
         scroll2 -= 0.5
         scroll3 -= 1
         scroll4 -= 2
@@ -609,9 +567,7 @@ while run:
         if abs(scroll4) > bg4_width:
             scroll4 = 0
         screen.blit(bg8, (0, 150))
-        
         main_sound_button.draw_text(screen)
-           
         if main_sound_button.check_click():
             if backgroundsound == 1:
                 backgroundsound = 0
@@ -689,7 +645,6 @@ while run:
                     x_button.rect.y = 530
                     o_button.draw_text(screen)
                     x_button.draw_text(screen)
-                    
                 if time.time() - start_count > 35 + 1:
                     lst_texts[2] = 4
                 if time.time() - start_count > 35 + 2:
@@ -716,7 +671,6 @@ while run:
                     pygame.draw.rect(screen, color["light red"], (200, 515, 410, 160), 4)  
                 if 35 + 19.8 < time.time() - start_count < 35 + 22:
                     pygame.draw.rect(screen, color["light red"], (200, 515, 410, 160), 4)
-                
                 if time.time() - start_count > 35 + 22:
                     lst_texts[1] = "Click 'O' if the second last number\nis the same as the current number\n"
                     texts["A new number is displayed\nEvery 5 seconds"][1] = 195
@@ -728,12 +682,10 @@ while run:
                         #print("o clicked")
                         lst_practice_answer[0] = "O"
                         #print(lst_practice_answer)
-                        
                     elif x_button.check_click():
                         #print("x clicked")
                         lst_practice_answer[0] = "X"
                         #print(lst_practice_answer)
-                        
                     if lst_practice_answer[0] == "O":
                         lst_texts[1] = "Correct\n\nThe previous numbers : 7  9"
                         texts["A new number is displayed\nEvery 5 seconds"][1] = 185
@@ -746,7 +698,6 @@ while run:
                         texts["A new number is displayed\nEvery 5 seconds"][1] = 185
                         frame_around_o_x_buttons_rect.center = 284, 594
                         pygame.draw.rect(screen, color["light red"], frame_around_o_x_buttons_rect, 3, border_radius = 15)
-                        
             
             elif time_reset == 2:
                 bubble = pygame.Surface((600, 200), pygame.SRCALPHA)
@@ -811,17 +762,10 @@ while run:
                     texts["Let's learn 2 back"] = [screenwidth/2,240]
                     if time_reset == 1:
                         start_count = time.time()
-                
-
-
-            
             howtoplay_title_button.draw_text(screen)
             howtoplay_back_button.draw_text(screen)
-
             howtoplay_title_button.hovered(color['green'], 32, color['white'], 32, handshape = False)
-            
             howtoplay_back_button.hovered(color['green'], 42, color['white'], 42, False)
-
             if howtoplay_back_button.check_click():
                 play_sound("sound/back.wav")
                 lst_practice_answer = [" ", " "]
@@ -862,12 +806,10 @@ while run:
                         howtoplay = False
             multiline_text(screen, 25, press_backspace_text, color["dark grey"], (screenwidth / 2, 750), 1)                
         elif credit == True:
-
             credit_title_button.draw_text(screen)
             credit_made_by_button.draw_text(screen)
             show_text(screen, credit_email, (screenwidth / 2, 375), color["white"], 45)
             credit_back_button.draw_text(screen)
-
             credit_title_button.hovered(color['green'], 42, color['white'], 42, False, x = credit_title_button.rect.x, y = credit_title_button.rect.y)
             credit_made_by_button.hovered(color['green'], 64, color['white'], 64, False, x = credit_made_by_button.rect.x, y = credit_made_by_button.rect.y)
             credit_back_button.hovered(color['green'], 42, color['white'], 42, False, x = credit_back_button.rect.x, y = credit_back_button.rect.y)
@@ -918,26 +860,21 @@ while run:
 
             if options_2back.check_click():
                 current_nback = 2
-
                 # print(f"number_of_questions:{number_of_questions}")
                 # print(f"current n_back : {current_nback}")
                 # print(f"low_number:{low_number}\nmed_number:{med_number}\nhigh_number:{high_number}") 
                 play_sound("sound/sci.wav")
             if options_3back.check_click():
                 current_nback = 3
-
                 play_sound("sound/sci.wav")
             if options_4back.check_click():
                 current_nback = 4
-
                 play_sound("sound/sci.wav")
             if options_5back.check_click():
                 current_nback = 5
-
                 play_sound("sound/sci.wav")
             if options_6back.check_click():
                 current_nback = 6
-
                 play_sound("sound/sci.wav")
             if current_nback == 2:
                 options_2back.content = options_2back.font_kind.render("2", True, color["green"])
@@ -969,7 +906,6 @@ while run:
                 options_4back.content = options_4back.font_kind.render("4", True, color["white"])
                 options_5back.content = options_5back.font_kind.render("5", True, color["white"])
                 options_6back.content = options_6back.font_kind.render("6", True, color["green"])
-            
             if options_low_number_of_questions.check_click():
                 low_number = True
                 med_number = False
@@ -986,13 +922,10 @@ while run:
                 high_number = True
                 play_sound("sound/clicks.wav")
 
-            
-
             #print(pygame.mouse.get_pos())
             options_back_button.hovered(color["green"], options_back_button.size, color["white"], options_back_button.size, handshape = False)
             if options_back_button.check_click():
                 options = False
-                
                 play_sound("sound/back.wav")
                 # I set this because if I sound/ the back button, it also clicks exit button in main menu
                 pygame.time.delay(100)
@@ -1010,16 +943,13 @@ while run:
                             options_key.rect.x -= 80
                         else:
                             options_key.rect.x -= 180
-                        
                     if event.key == pygame.K_RIGHT:
                         play_sound("sound/menuclick.wav")
                         if options_key.rect.y < 300:
                             options_key.rect.x += 80
                         else:
                             options_key.rect.x += 180
-                        
                     if event.key == pygame.K_UP:
-
                         play_sound("sound/menuclick.wav")
                         options_key.rect.y -= 180
                         options_key.rect.width = 32
@@ -1034,28 +964,21 @@ while run:
                         options_key.rect.x = 315
 
                     if event.key == pygame.K_RETURN:
-                        
                         if 260 < options_key.rect.y < 300:
                             play_sound("sound/sci.wav")
                             if 340 < options_key.rect.x < 380:
                                 current_nback = 2
-
                             if 390 < options_key.rect.x < 460:
                                 current_nback = 3  
-
                             if 480 < options_key.rect.x < 540:
                                 current_nback = 4
-               
                             if 550 < options_key.rect.x < 620:
                                 current_nback = 5
-
                             if 640 < options_key.rect.x < 700:
                                 current_nback = 6
-                                    
                         if 455 < options_key.rect.y < 475:
                             play_sound("sound/clicks.wav")
                             if 305 < options_key.rect.x < 325:
-                                
                                 low_number = True
                                 med_number = False
                                 high_number = False
@@ -1067,8 +990,6 @@ while run:
                                 low_number = False
                                 med_number = False
                                 high_number = True
-
-                    
             if options_key.rect.y < 360:
                 if options_key.rect.x <= 341:
                     options_key.rect.x = 341
@@ -1076,7 +997,6 @@ while run:
                     options_key.rect.x = 660
                 if options_key.rect.y <= 280:
                     options_key.rect.y = 280
- 
             elif 450 < options_key.rect.y < 470:
                 if options_key.rect.x <= 315:
                     options_key.rect.x = 315
@@ -1084,30 +1004,25 @@ while run:
                     options_key.rect.x = 675
                 if options_key.rect.y >= 460:
                     options_key.rect.y = 460
-            
             if low_number:
                 med_number = False
                 high_number = False
                 options_low_number_of_questions.content = options_low_number_of_questions.font_kind.render("low", True, color["green"])
                 options_med_number_of_questions.content = options_med_number_of_questions.font_kind.render("med", True, color["white"])
                 options_high_number_of_questions.content = options_high_number_of_questions.font_kind.render("high", True, color["white"])
-            
             elif med_number:
                 low_number = False
                 high_number = False
                 options_low_number_of_questions.content = options_low_number_of_questions.font_kind.render("low", True, color["white"])
                 options_med_number_of_questions.content = options_med_number_of_questions.font_kind.render("med", True, color["green"])
                 options_high_number_of_questions.content = options_high_number_of_questions.font_kind.render("high", True, color["white"])
-               
             elif high_number:
                 low_number = False
                 med_number = False
                 options_low_number_of_questions.content = options_low_number_of_questions.font_kind.render("low", True, color["white"])
                 options_med_number_of_questions.content = options_med_number_of_questions.font_kind.render("med", True, color["white"])
                 options_high_number_of_questions.content = options_high_number_of_questions.font_kind.render("high", True, color["green"])
-
         else:
-
             main_mainmenu_button.draw_text(screen)
             main_start_button.draw_text(screen)
             main_howtoplay_button.draw_text(screen)
@@ -1115,7 +1030,6 @@ while run:
             main_options_button.draw_text(screen)
             main_exit_button.draw_text(screen)
             main_x_button.draw_text(screen)
-
             main_start_button.hovered(color['green'], 32, color['white'], 32, True)
             main_howtoplay_button.hovered(color['green'], 32, color['white'], 32, False)
             main_credit_button.hovered(color['green'], 32, color['white'], 32, False)
@@ -1128,7 +1042,6 @@ while run:
                 #print("start menu clicked")
                 game = True
                 main = False
-
             if main_credit_button.check_click():
                 play_sound("sound/entersound.wav")
                 #print("credit menu clicked")
@@ -1138,22 +1051,17 @@ while run:
                 #print("how to play menu clicked")
                 start_count = time.time()
                 howtoplay = True
-                
             if main_options_button.check_click():
                 play_sound("sound/entersound.wav")
                 #print("options menu clicked")
                 options = True
             if main_exit_button.check_click():
                 run = False
-            
-            if main_x_button.key_movement():
-                
+            if main_x_button.key_movement(): 
                 if main_x_button.rect.y < 250:
                     #print("START!!!")
-                    
                     game = True
                     main = False
-
                     play_sound("sound/gamestart.ogg")
                 elif main_x_button.rect.y < 350:
                     #print("HOW TO PLAY pressed")
@@ -1171,7 +1079,6 @@ while run:
                 elif main_x_button.rect.y < 650:
                     #print("EXIT pressed")
                     run = False
-
             if main_x_button.rect.y < 208:
                 main_x_button.rect.y = 208
             if main_x_button.rect.y < 250:
@@ -1190,7 +1097,6 @@ while run:
     # Game screen
     elif game == True:
         if gamepaused == 1:
-        
             #print(pygame.mouse.get_pos())
             if paused_sound_flag == False and backgroundsound == 1:
                 paused_sound_flag = True
@@ -1206,7 +1112,6 @@ while run:
             pause_button.draw_text(screen)
             press_esc_text.draw_text(screen)
             quit_text.draw_text(screen)
-
             main_menu_text.draw_text(screen)
             paused_sound_button.draw_text(screen)
             if paused_sound_button.check_click():
@@ -1222,7 +1127,6 @@ while run:
                 paused_sound_button.image = pygame.image.load("img/backgroundsound0.png")
             elif backgroundsound == 1:
                 paused_sound_button.image = pygame.image.load("img/backgroundsound1.png")
-
             pause_button.hovered(None, None)
             press_esc_text.hovered(color["green"], 50, color["white"], 50)
             main_menu_text.hovered(color["green"], 30, color["white"], 30)
@@ -1264,16 +1168,13 @@ while run:
                 pygame.time.delay(100)
             if quit_text.check_click():
                 run = False
-            
 
         else:
             #print(pygame.mouse.get_pos())
             if main_background_sound_flag and backgroundsound == 1:
                 main_background_sound_flag = False
                 main_sound_channel.fadeout(500)
-
             update_screen(screen,color["black"])
-            
             screen.blit(gamebg, (0, 0))
             odometer_image.transform_image(1.2, 1)
             odometer_image.draw_on_screen(screen, 92, 660)
@@ -1293,7 +1194,6 @@ while run:
             # blit images from lst_rendered_contents onto screen
             for i in range(len(lst_rendered_contents)):
                 screen.blit(lst_rendered_contents[i], lst_rect[i])
-            
 
             # every 0.2 second - before start
             current_count = pygame.time.get_ticks()
@@ -1332,31 +1232,23 @@ while run:
                     # every 5 second car moves
                     # if round(countdown_before_start,2) % 5 == 0.0:
                     #     rocket_image_rect.x += 500/number_of_questions
-                    
 
                     # this makes number disappear for a short time
                     if quotient * 5 + 4.78 < countdown_before_start:
                         lst_rect[quotient].center = -200, -200
                     else:
                         lst_rect[quotient].center = screenwidth / 2 + 8, screenheight / 2 - 45
-                
-            
 
                 # show counter before the next number shows up - used remainder
                 if 0 <= countdown_before_start < number_of_questions * 5 :
-                    
                     if game_background_sound_flag == False:
                         game_background_sound_flag = True
                         play_sound(channel = 1)
-
                     if rem == 0:
                         if number_appear_sound_flag == False:
                             number_appear_sound_flag = True
                             play_sound("sound/number_appear_edited.mp3")
-                        
                         counter_for_next_number_content = counter_for_next_number_font.render(" ", True, color["white"])
-                        
-                        
                     if rem == 1:
                         counter_for_next_number_content = counter_for_next_number_font.render(" ", True, color["white"])
                         number_appear_sound_flag = False
@@ -1370,12 +1262,10 @@ while run:
                         counter_for_next_number_content = counter_for_next_number_font.render("2", True, color["white"])
                     if rem == 4:
                         counter_for_next_number_content = counter_for_next_number_font.render("1", True, color["white"])
-                        
                 elif round(countdown_before_start, 2) >= number_of_questions * 5:
                     counter_for_next_number_content = counter_for_next_number_font.render(" ", True, color["white"])
 
             if 5 * current_nback <= round(countdown_before_start, 2) < 5 * number_of_questions:
-                
                 o_button.draw_text(screen)
                 x_button.draw_text(screen)
                 o_button.hovered(None, 12)
@@ -1385,12 +1275,10 @@ while run:
                 # so I am just using only x button to determine left key pressed or right key pressed.
                 x_button.left_right_movement()
 
-
                 if o_button.check_click() or x_button.right_key_pressed:
                     #print(f"quotient - 2 : {quotient-current_nback}")
                     lst_user_answer[quotient-current_nback] = "O"
                     #print(lst_user_answer)
-                    
                     #print("o clicked")
                     #print(f"current number:{lst[quotient]}")
                     #print(f"current_nback-back number:{lst[quotient - current_nback]}")
@@ -1399,7 +1287,6 @@ while run:
                         #print("correct choice!")
                     #else:
                         #print("wrong choice!")
-
                 if x_button.check_click() or x_button.left_key_pressed:
                     lst_user_answer[quotient-current_nback] = "X"
                     #print(lst_user_answer)
@@ -1411,7 +1298,7 @@ while run:
                         #print("correct choice!")
                     #else:
                         #print("wrong choice!")
-                
+        
                 if lst_user_answer[quotient-current_nback] == "O":
                     frame_around_o_x_buttons_rect.center = 524, 539
                     pygame.draw.rect(screen, color["light green"], frame_around_o_x_buttons_rect, 3, border_radius = 15)
@@ -1425,7 +1312,6 @@ while run:
             if round(countdown_before_start, 2) > number_of_questions * 5:
                 reset_all_sound_flags()
                 pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_ARROW)
-                
                 score = True
                 game = False
             
@@ -1448,14 +1334,11 @@ while run:
         pygame.draw.rect(screen, color["white"], rectangle_outside, 3)
         pygame.draw.line(screen,color["white"], (100, 150), (700, 150), 2)
         pygame.draw.line(screen,color["white"], (280, 185), (280, 680), 2)
-
-     
         earth_image.draw_on_screen(screen, 100, 82)
         space_station_image.draw_on_screen(screen, 640, 78)
         rocket_image.rotate_image(90)
         rocket_image.draw_on_screen(screen, 600, rocket_image.rect.y)
         screen.blit(result_text.content, result_text.rect)
-        
         n_back_text.draw_text(screen)
         questions.draw_text(screen)
         correct_answers.draw_text(screen)
@@ -1465,8 +1348,7 @@ while run:
         result_percentage_text.draw_text(screen)
         go_back_to_main_menu_button.draw_text(screen)
         go_back_to_main_menu_button.hovered(color['green'], 20, color['white'], 20, handshape = True)
-        
-        
+
         # questions 
         if len(lst_rendered_contents_2) <= 10:
             for index, each in enumerate(lst_rendered_contents_2):
@@ -1479,7 +1361,6 @@ while run:
                     screen.blit(each, ((280 + (470 * (index % 10 + 1) / (11))), 255 + 40))
                 if 19 < index:
                     screen.blit(each, ((280 + (470 * (index % 10 + 1) / (11))), 255 + 80))
-
         elif 30 < len(lst_rendered_contents_2):            
             long_lst = []
             for each in lst:
@@ -1502,13 +1383,10 @@ while run:
                 answer_font = pygame.font.Font("gameplay.ttf", 20)
                 answer_content = answer_font.render(str(each), True, color["white"])
                 screen.blit(answer_content, ((280 + (470 * (index + 1) / (len(lst_answer) + 1))), 395))
- 
         elif 10 < len(lst_answer):
-
             for index, each in enumerate(lst_answer):
                 answer_font = pygame.font.Font("gameplay.ttf", 20)
                 answer_content = answer_font.render(str(each), True, color["white"])
-
                 if index <= 9:
                     screen.blit(answer_content, ((280 + (470 * (index + 1) / (11))), 395))
                 if 9 < index <= 19:
@@ -1538,7 +1416,6 @@ while run:
                     screen.blit(user_answer_content, ((280 + (470 * (index % 10 + 1) / (11))), 530 + 40))
                 if 19 < index:
                     screen.blit(user_answer_content, ((280 + (470 * (index % 10 + 1) / (11))), 530 + 80))
-
         if percentage_control == False:
             percentage_control = True
             for i in range(len(lst_answer)):
@@ -1575,12 +1452,9 @@ while run:
         percentage_message_rect = percentage_message.get_rect()
         percentage_message_rect.center = 525, 645
         screen.blit(percentage_message,percentage_message_rect)
-        
-        
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RETURN:
                     last_count = 0
@@ -1639,7 +1513,6 @@ while run:
         mute_background_sound_flags()
     elif backgroundsound == 1:
         resume_background_sound_flags()
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
