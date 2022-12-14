@@ -27,7 +27,7 @@ One number will show at a time and disappears.
 
 If you are playing 2 back, you have to memorize two sequence back and if that two sequence back number is the same as the current number, you press `O`, if not press `X`.
 
-In this case, the correct answer would be 
+In this case, the correct answer would be `O`, `X`, `X`.
 
 |3|5|3|2|4|
 |--|--|--|--|--|
@@ -35,7 +35,7 @@ In this case, the correct answer would be
 
 
 
-There will be tutorial inside the game for better understanding.
+There will be tutorial inside the game for clearer explanation.
 
 ---
 ##
