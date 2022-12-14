@@ -1270,7 +1270,7 @@ while run:
                 x_button.draw_text(screen)
                 o_button.hovered(None, 12)
                 x_button.hovered(None, 12)
-                
+
                 # I tried to implement left key for 'X', and right key for 'O' but it didn't let me
                 # so I am just using only x button to determine left key pressed or right key pressed.
                 x_button.left_right_movement()
