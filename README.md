@@ -35,7 +35,7 @@ In this case, the correct answer would be
 
 
 
-There will be tutorial inside the game for better understanding.
+There will be tutorial inside the game for clearer explanation.
 
 ---
 ##
