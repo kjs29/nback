@@ -5,8 +5,6 @@
 [N - back(Wikipedia)](https://en.wikipedia.org/wiki/N-back)
 
 
-
-##
 # How to play
 
 Let's say that there will be numbers called to you.
@@ -38,12 +36,12 @@ In this case, the correct answer would be `O`, `X`, `X`.
 There will be tutorial inside the game for clearer explanation.
 
 ---
-##
+
 # Download the game
 
 ## Download Python.
 ##
-> If you already have python 3.0 or higher, skip this part. If you don't have python, download python first [here](https://www.python.org/downloads/).
+> If you already have python 3.0 or higher, skip this part. If you don't have python, download python first [https://www.python.org](https://www.python.org/downloads/).
 
 To check the version of the python installed in your computer,
 
@@ -79,13 +77,13 @@ pip3 install pygame --pre
 
 for users who use python 3.11.
 
-More information on [pygame website](https://www.pygame.org/wiki/GettingStarted)
+More information on [https://www.pygame.org](https://www.pygame.org/wiki/GettingStarted)
 
 ## 2. Download git (If you downloaded git already, skip this part)
 
 ### Download git
 
-> Go to [this website](https://git-scm.com) and download git.
+> Go to [https://git-scm.com](https://git-scm.com) and download git.
 
 ## 3. Create a folder to clone (download) the game files.
 
