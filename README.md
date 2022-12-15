@@ -88,7 +88,12 @@ More information on [https://www.pygame.org](https://www.pygame.org/wiki/Getting
 ## 3. Create a folder to clone (download) the game files.
 
 ### - Create a folder 
-### - Open the Command Prompt / terminal
+or on Command Prompt / Terminal
+```
+$ mkdir programming
+```
+
+### - Open the Command Prompt / Terminal
 ### - Make sure that you are at folder directory in there and type
 ```
 git clone https://github.com/kjs29/nback.git
