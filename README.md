@@ -96,6 +96,7 @@ $ mkdir programming
 ### - Open the Command Prompt / Terminal
 ### - Make sure that you are at folder directory in there and type
 ```
+cd programming
 git clone https://github.com/kjs29/nback.git
 ```
 ### - You will see that the files are downloaded
