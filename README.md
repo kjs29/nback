@@ -1,4 +1,4 @@
-# N back game
+# N back Game
 
 <p float="left">
   <img width="280" alt="Screenshot 2022-12-15 at 5 19 04 PM" src="https://user-images.githubusercontent.com/96529477/207994238-0635367d-a038-43d1-9bf9-0d5e2d864c72.png">
