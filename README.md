@@ -51,7 +51,7 @@ There will be tutorial inside the game for a clearer explanation.
 # Download the game
 
 ## Download Python.
-##
+
 > If you already have python 3.0 or higher, skip this part. If you don't have python, download python first [https://www.python.org](https://www.python.org/downloads/).
 
 To check the version of the python installed in your computer,
