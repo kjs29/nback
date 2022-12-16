@@ -4,16 +4,15 @@
 
 ### I believe that an individual's intelligence can increase with practice the same you would exercise and build muscle. I created this game with some hope to improve my intelligence and I want everyone to try this game and get smarter. Or just have fun.
 
-### This game is my first project that I have ever created since I started learning python. I learned that people can make games with [pygame module](##To-play-the-game,-download-`pygame`-module-please.), and creating games can teach a lot about programming in general. 
+### This game is my first project that I have ever created since I started learning python. I heard that people can make games with [pygame module](##To-play-the-game,-download-`pygame`-module-please.), and creating games can teach a lot about programming in general so I decided to give it a try.
 
 # What is 'N back'?
 
-> "The n-back task is a continuous performance task that is commonly used as an assessment in psychology and cognitive neuroscience to measure a part of working memory and working memory capacity. The n-back was introduced by Wayne Kirchner in 1958. N-Back can also be used as a training method to improve working memory and working memory capacity and also increase fluid intelligence.
+> The n-back task is a continuous performance task that is commonly used as an assessment in psychology and cognitive neuroscience to measure a part of working memory and working memory capacity. The n-back was introduced by Wayne Kirchner in 1958. N-Back can also be used as a training method to improve working memory and working memory capacity and also increase fluid intelligence.
 >
 > ...
 >
 > The n-back task was developed by Wayne Kirchner for his research into short-term memory; he used it to assess age differences in memory tasks of "rapidly changing information".
-" 
 
 source - https://en.wikipedia.org/wiki/N-back
 
@@ -44,8 +43,6 @@ In this case, the correct answer would be `O`, `X`, `X`.
 | | |O|X|X|
 
 There will be tutorial inside the game for a clearer explanation.
-
-Screenshot 2022-12-15 at 4.54.01 PM.png
 
 [N - back on Wikipedia](https://en.wikipedia.org/wiki/N-back)
 
