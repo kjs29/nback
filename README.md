@@ -59,7 +59,28 @@ There will be tutorial inside the game for a clearer explanation.
 
 'O' : `>` or `mouse click` on 'O' button
 
+In the game, press `ESC` key to pause. `ESC` again to resume.
 
+## Game Menu
+
+- Start
+
+- How to play
+
+- Credits
+
+- Options
+
+    - #N (2~6)
+
+    - Number of questions (Low, Med, High)
+        > Low : #N * 2
+        >
+        > Med : #N * 4
+        >
+        > High : #N * 6
+
+- Exit
 
 ---
 
