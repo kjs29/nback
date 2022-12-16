@@ -1,8 +1,15 @@
 # N back game
 
+<p float="left">
+  <img width="320" alt="Screenshot 2022-12-15 at 5 19 04 PM" src="https://user-images.githubusercontent.com/96529477/207994238-0635367d-a038-43d1-9bf9-0d5e2d864c72.png">
+  <img width="320" alt="Screenshot 2022-12-15 at 5 26 31 PM" src="https://user-images.githubusercontent.com/96529477/207994639-78b21f5a-4a44-4dbb-b528-1039ab67cd8f.png">
+  <img width="320" alt="Screenshot 2022-12-15 at 5 27 47 PM" src="https://user-images.githubusercontent.com/96529477/207994648-a2cd124c-866c-49d5-862e-ff3da6b033f1.png">
+</p>
+
+
 # The purpose of the project
 
-### I believe that an individual's intelligence can increase with practice the same you would exercise and build muscle. I created this game with some hope to improve my intelligence and I want everyone to try this game and get smarter. Or just have fun.
+### I believe that an individual's intelligence can increase with practice the same way you would exercise and build muscle. I created this game with some hope to improve my intelligence and I want everyone to try this game and get smarter. Or just have fun.
 
 ### This game is my first project that I have ever created since I started learning python. I heard that people can make games with [pygame module](##To-play-the-game,-download-`pygame`-module-please.), and creating games can teach a lot about programming in general so I decided to give it a try.
 
@@ -45,6 +52,14 @@ In this case, the correct answer would be `O`, `X`, `X`.
 There will be tutorial inside the game for a clearer explanation.
 
 [N - back on Wikipedia](https://en.wikipedia.org/wiki/N-back)
+
+## Key control
+
+'X' : `<` or `mouse click` on 'X' button
+
+'O' : `>` or `mouse click` on 'O' button
+
+
 
 ---
 
