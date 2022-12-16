@@ -1,9 +1,9 @@
 # N back game
 
 <p float="left">
-  <img width="320" alt="Screenshot 2022-12-15 at 5 19 04 PM" src="https://user-images.githubusercontent.com/96529477/207994238-0635367d-a038-43d1-9bf9-0d5e2d864c72.png">
-  <img width="320" alt="Screenshot 2022-12-15 at 5 26 31 PM" src="https://user-images.githubusercontent.com/96529477/207994639-78b21f5a-4a44-4dbb-b528-1039ab67cd8f.png">
-  <img width="320" alt="Screenshot 2022-12-15 at 5 27 47 PM" src="https://user-images.githubusercontent.com/96529477/207994648-a2cd124c-866c-49d5-862e-ff3da6b033f1.png">
+  <img width="280" alt="Screenshot 2022-12-15 at 5 19 04 PM" src="https://user-images.githubusercontent.com/96529477/207994238-0635367d-a038-43d1-9bf9-0d5e2d864c72.png">
+  <img width="280" alt="Screenshot 2022-12-15 at 5 26 31 PM" src="https://user-images.githubusercontent.com/96529477/207994639-78b21f5a-4a44-4dbb-b528-1039ab67cd8f.png">
+  <img width="280" alt="Screenshot 2022-12-15 at 5 27 47 PM" src="https://user-images.githubusercontent.com/96529477/207994648-a2cd124c-866c-49d5-862e-ff3da6b033f1.png">
 </p>
 
 
