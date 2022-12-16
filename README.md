@@ -25,11 +25,11 @@ source - https://en.wikipedia.org/wiki/N-back
 
 # How to play
 
-Let's say that there will be numbers called to you.
+Let's say that there will be numbers shown to you.
 
 `3 5 3 2 4`
 
-One number will show at a time and disappears.
+One number will show at a time and will disappear after it is shown.
 
 `3`
 
@@ -86,15 +86,19 @@ In the game, press `ESC` key to pause. `ESC` again to resume.
 
 # Download the game
 
-## Download Python.
+## Download Python. Python should already be installed to play the game.
 
 > If you already have python 3.0 or higher, skip this part. If you don't have python, download python first [https://www.python.org](https://www.python.org/downloads/).
 
 To check the version of the python installed in your computer,
 
+For window user, open command prompt and type
+
 ```
 python --version
 ```
+
+For mac user, open terminal and type
 
 ```
 python3 --version
