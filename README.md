@@ -158,4 +158,6 @@ git clone https://github.com/kjs29/nback.git
 ### - Open `main.py` and run it.
 
 ---
+Thank you for playing.
+
 Any inquiries : jsk.jinsung@gmail.com
