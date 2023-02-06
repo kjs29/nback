@@ -55,15 +55,15 @@ In this case, the correct answer would be `O` (3 == 3), `X` (5 != 2), `X` (3 != 
 
 There will be tutorial inside the game for a clearer explanation.
 
-[N - back on Wikipedia](https://en.wikipedia.org/wiki/N-back)
+Or here is the detailed explanation from Wikipedia.org. [N - back on Wikipedia](https://en.wikipedia.org/wiki/N-back)
 
 ## Key control
 
-'X' : `<` or `mouse click` on 'X' button
+'X' : `<(Left Key)` or `mouse click` on 'X' button
 
-'O' : `>` or `mouse click` on 'O' button
+'O' : `>(Right Key)` or `mouse click` on 'O' button
 
-In the game, press `ESC` key to pause. `ESC` again to resume.
+In the game, press `ESC` key to pause. `ESC` again to unpause or resume the gameplay.
 
 ## Game Menu
 
