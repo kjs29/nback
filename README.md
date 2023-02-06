@@ -11,7 +11,7 @@
 
 ### I believe that an individual's intelligence can increase with practice the same way you would exercise and build muscle. I created this game with some hope to improve my intelligence and I want everyone to try this game and get smarter. Or just have fun.
 
-### This game is my first project that I have ever created since I started learning python. I heard that people can make games with [pygame module](##To-play-the-game,-download-`pygame`-module-please.), and creating games can teach a lot about programming in general so I decided to give it a try.
+### This game is my first project that I have ever created since I started learning python. I heard that people can make games with [pygame module](https://www.pygame.org/news), and creating games can teach a lot about programming in general so I decided to give it a try.
 
 # What is 'N back'?
 
