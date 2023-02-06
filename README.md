@@ -15,6 +15,8 @@
 
 # What is 'N back'?
 
+Here is some brief information about the game if you'd like to know what 'N back' is.
+
 > The n-back task is a continuous performance task that is commonly used as an assessment in psychology and cognitive neuroscience to measure a part of working memory and working memory capacity. The n-back was introduced by Wayne Kirchner in 1958. N-Back can also be used as a training method to improve working memory and working memory capacity and also increase fluid intelligence.
 >
 > ...
@@ -25,23 +27,23 @@ source - https://en.wikipedia.org/wiki/N-back
 
 # How to play
 
-Let's say that there will be numbers shown to you.
+We can play 2 back, 3 back, 4 back, and so on.. But, let's say we are playing 2 back right now.
 
-`3 5 3 2 4`
+In the game, there will be numbers shown to us.
 
 One number will show at a time and will disappear after it is shown.
 
-`3`
+### `3`
 
-`5`
+### `5`
 
-`3`
+### `3`
 
-`2`
+### `2`
 
-`4`
+### `4`
 
-If you are playing 2 back, you have to memorize two sequence back and if that two sequence back number is the same as the current number, you press `O`, if not press `X`.
+We are playing 2 back, we have to memorize two sequence back and if that two sequence back number is the same as the current number, we press `O`, if not press `X`.
 
 In this case, the correct answer would be `O`, `X`, `X`.
 
