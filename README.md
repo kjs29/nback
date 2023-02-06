@@ -156,3 +156,6 @@ git clone https://github.com/kjs29/nback.git
 ```
 ### - You will see that the files are downloaded
 ### - Open `main.py` and run it.
+
+---
+Any inquiries : jsk.jinsung@gmail.com
