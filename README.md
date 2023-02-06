@@ -27,7 +27,9 @@ source - https://en.wikipedia.org/wiki/N-back
 
 # How to play
 
-We can play 2 back, 3 back, 4 back, and so on.. But, let's say we are playing 2 back right now.
+We can play 2 back, 3 back, 4 back, and so on.. The higher the number is, more difficult it gets!
+
+But, let's say we are playing 2 back right now.
 
 In the game, there will be numbers shown to us.
 
