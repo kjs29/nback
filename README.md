@@ -47,7 +47,7 @@ One number will show at a time and will disappear after it is shown.
 
 We are playing 2 back, we have to memorize two sequence back and if that two sequence back number is the same as the current number, we press `O`, if not press `X`.
 
-In this case, the correct answer would be `O`, `X`, `X`.
+In this case, the correct answer would be `O` (3 == 3), `X` (5 != 2), `X` (3 != 4). 
 
 |3|5|3|2|4|
 |--|--|--|--|--|
