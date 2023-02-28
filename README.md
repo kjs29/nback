@@ -17,7 +17,23 @@
 
 # What is 'N back'?
 
-Here is some brief information about the game if you'd like to know what 'N back' is.
+### The n-back game is a fun and challenging brain exercise. 
+
+The game involves remembering a sequence of items (like colors, letters, or shapes) that are presented to you, one at a time, 
+
+and then recalling an item that occurred "n" positions back in the sequence.
+
+For example,
+
+if the game is set to "2-back," you'll need to remember the current item, as well as the item that appeared two positions back. 
+
+If the current item is a blue square, and two items back was a red triangle, you would need to remember "red triangle" as your response.
+
+As you get better at the game, you can increase the "n" value to make it more challenging. 
+
+It's a great way to exercise your memory and attention skills, and can be a fun way to challenge yourself and see how far you can go!
+
+
 
 > The n-back task is a continuous performance task that is commonly used as an assessment in psychology and cognitive neuroscience to measure a part of working memory and working memory capacity. The n-back was introduced by Wayne Kirchner in 1958. N-Back can also be used as a training method to improve working memory and working memory capacity and also increase fluid intelligence.
 >
