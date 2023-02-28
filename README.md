@@ -1,9 +1,9 @@
 # N back Game
 
 <p float="left">
-  <img width="280" alt="Screenshot 2022-12-15 at 5 19 04 PM" src="https://user-images.githubusercontent.com/96529477/207994238-0635367d-a038-43d1-9bf9-0d5e2d864c72.png">
-  <img width="280" alt="Screenshot 2022-12-15 at 5 26 31 PM" src="https://user-images.githubusercontent.com/96529477/207994639-78b21f5a-4a44-4dbb-b528-1039ab67cd8f.png">
-  <img width="280" alt="Screenshot 2022-12-15 at 5 27 47 PM" src="https://user-images.githubusercontent.com/96529477/207994648-a2cd124c-866c-49d5-862e-ff3da6b033f1.png">
+  <img width="250" alt="Screenshot 2022-12-15 at 5 19 04 PM" src="https://user-images.githubusercontent.com/96529477/207994238-0635367d-a038-43d1-9bf9-0d5e2d864c72.png">
+  <img width="250" alt="Screenshot 2022-12-15 at 5 26 31 PM" src="https://user-images.githubusercontent.com/96529477/207994639-78b21f5a-4a44-4dbb-b528-1039ab67cd8f.png">
+  <img width="250" alt="Screenshot 2022-12-15 at 5 27 47 PM" src="https://user-images.githubusercontent.com/96529477/207994648-a2cd124c-866c-49d5-862e-ff3da6b033f1.png">
 </p>
 
 
@@ -13,7 +13,7 @@
 
 ### I believe that an individual's intelligence can increase with practice the same way you would exercise and build muscle. I was watching a show that introduced this game called 'N back' and it looked challenging but interesting.
 
-### This game is my first project after learning Python. I heard that people can make games with [pygame module](https://www.pygame.org/news), and creating games can teach a lot about programming in general so I decided to give it a try.
+### This game is my first project after learning Python. I heard that people can make games with [pygame](https://www.pygame.org/news), and creating games can teach a lot about programming in general so I decided to give it a try.
 
 # What is 'N back'?
 
@@ -45,7 +45,7 @@ source - https://en.wikipedia.org/wiki/N-back
 
 # How to play
 
-We can play 2 back, 3 back, 4 back, and so on.. The higher the number is, more difficult it gets!
+We can play 2 back, 3 back, 4 back, and so on.. The higher the N is, more difficult it gets!
 
 But, let's say we are playing 2 back right now.
 
