@@ -175,7 +175,7 @@ git clone https://github.com/kjs29/nback.git
 ### - You will see that the files are downloaded
 ### - Open `main.py` and run it.
 
-# Or Directly download from https://itch.io/kjs29/nback
+# Or Directly download from https://kjs29.itch.io/nback
 
 ---
 Thank you for playing.
