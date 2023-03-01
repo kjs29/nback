@@ -106,7 +106,7 @@ In the game, press `ESC` key to pause. `ESC` again to unpause or resume the game
 
 ---
 
-# Download the game
+# Download the game from Github (Windows, MacOS)
 
 ## Download Python. Python should already be installed to play the game.
 
@@ -174,6 +174,8 @@ git clone https://github.com/kjs29/nback.git
 ```
 ### - You will see that the files are downloaded
 ### - Open `main.py` and run it.
+
+# Or Directly download from https://itch.io/kjs29/nback
 
 ---
 Thank you for playing.
