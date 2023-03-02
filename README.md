@@ -6,6 +6,27 @@
   <img width="250" alt="Screenshot 2022-12-15 at 5 27 47 PM" src="https://user-images.githubusercontent.com/96529477/207994648-a2cd124c-866c-49d5-862e-ff3da6b033f1.png">
 </p>
 
+# Download the game 
+
+## Clone the repo from Github (Windows, MacOS)
+
+On your terminal type the commands below
+
+```
+cd ~/Desktop
+mkdir pygame_nback
+cd pygame_nback
+python3 -m venv env
+source env/bin/activate
+git clone https://github.com/kjs29/nback.git
+cd nback
+pip install -r requirements.txt
+python main.py
+```
+
+## Download from itch.io (Windows only)
+
+https://kjs29.itch.io/nback
 
 # The purpose of the project
 
@@ -103,28 +124,3 @@ In the game, press `ESC` key to pause. `ESC` again to unpause or resume the game
         > High : #N * 6
 
 - Exit
-
----
-
-# Download the game 
-
-## Clone the repo from Github (Windows, MacOS)
-
-On your terminal type the commands below
-
-```
-cd ~/Desktop
-mkdir pygame_nback
-cd pygame_nback
-python3 -m venv env
-source env/bin/activate
-git clone https://github.com/kjs29/nback.git
-cd nback
-pip install -r requirements.txt
-python main.py
-```
-
-## Download from itch.io (Windows only)
-
-https://kjs29.itch.io/nback
-
