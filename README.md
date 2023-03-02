@@ -12,11 +12,26 @@
 
 Copy & Paste the following code below in your terminal - The game will be downloaded in the folder called in `~/Desktop/pygame_nback`
 
+<em>MacOS or Linux</em>
+
 ```
 cd ~/Desktop && mkdir pygame_nback && cd pygame_nback
 python3 -m venv env && source env/bin/activate
 git clone https://github.com/kjs29/nback.git
 cd nback && pip install -r requirements.txt && python main.py
+```
+
+<em>Windows</em>
+```
+cd %userprofile%\Desktop
+mkdir pygame_nback
+cd pygame_nback
+python -m venv env
+.\env\Scripts\activate
+git clone https://github.com/kjs29/nback.git
+cd nback
+pip install -r requirements.txt
+python main.py
 ```
 
 ## Download from itch.io (Windows only)
