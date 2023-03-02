@@ -119,3 +119,6 @@ In the game, press `ESC` key to pause. `ESC` again to unpause or resume the game
         > High : #N * 6
 
 - Exit
+
+---
+If you have any questions, please contact me at jsk.jinsung@gmail.com
