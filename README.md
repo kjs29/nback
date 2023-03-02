@@ -13,15 +13,10 @@
 On your terminal type the commands below
 
 ```
-cd ~/Desktop
-mkdir pygame_nback
-cd pygame_nback
-python3 -m venv env
-source env/bin/activate
+cd ~/Desktop && mkdir pygame_nback && cd pygame_nback
+python3 -m venv env && source env/bin/activate
 git clone https://github.com/kjs29/nback.git
-cd nback
-pip install -r requirements.txt
-python main.py
+cd nback && pip install -r requirements.txt && python main.py
 ```
 
 ## Download from itch.io (Windows only)
