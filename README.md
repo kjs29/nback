@@ -23,15 +23,10 @@ cd nback && pip install -r requirements.txt && python main.py
 
 <em>Windows</em>
 ```
-cd %userprofile%\Desktop
-mkdir pygame_nback
-cd pygame_nback
-python -m venv env
-.\env\Scripts\activate
+cd %userprofile%\Desktop && mkdir pygame_nback && cd pygame_nback
+python -m venv env && .\env\Scripts\activate
 git clone https://github.com/kjs29/nback.git
-cd nback
-pip install -r requirements.txt
-python main.py
+cd nback && pip install -r requirements.txt && python main.py
 ```
 
 ## Download from itch.io (Windows only)
