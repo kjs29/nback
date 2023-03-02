@@ -37,10 +37,10 @@ start_count = time.time()
 current_nback = 2
 
 #font
-font15 = pygame.font.Font("gameplay.ttf", 15)
-font20 = pygame.font.Font("gameplay.ttf", 20)
-font55 = pygame.font.Font("gameplay.ttf", 55)
-font30_clear = pygame.font.Font("KGPrimaryPenmanship.ttf",30)
+font15 = pygame.font.Font("font/gameplay.ttf", 15)
+font20 = pygame.font.Font("font/gameplay.ttf", 20)
+font55 = pygame.font.Font("font/gameplay.ttf", 55)
+font30_clear = pygame.font.Font("font/KGPrimaryPenmanship.ttf",30)
 
 # Questions (numbers)
 lst = []
@@ -149,7 +149,7 @@ def regenerate_numbers():
 
     if random_number_control == False:
         random_number_control = True
-        font = pygame.font.Font("gameplay.ttf", 164)
+        font = pygame.font.Font("font/gameplay.ttf", 164)
         for i in range(number_of_questions):
             lst.append(randint(1, 9))
             each_content_1 = font.render(str(lst[i]), True, color["white"])
@@ -238,14 +238,14 @@ def resume_background_sound_flags():
 def multiline_text(screen,size,text,color,coor,linespace= 10):
     text_list = text.splitlines()
     for i,e in enumerate(text_list):
-        font = pygame.font.Font("KGPrimaryPenmanship.ttf",size)
+        font = pygame.font.Font("font/KGPrimaryPenmanship.ttf",size)
         message_content = font.render(e,True,color)
         message_content_rect = message_content.get_rect()
         message_content_rect.center = coor[0], coor[1] + size*i + (i*linespace)
         screen.blit(message_content,message_content_rect)
 
 def show_text(screen,text,coor,color,size):
-    font = pygame.font.Font("KGPrimaryPenmanship.ttf",size)
+    font = pygame.font.Font("font/KGPrimaryPenmanship.ttf",size)
     content = font.render(text,True,color)
     content_rect = content.get_rect()
     content_rect.center = coor[0],coor[1]
@@ -401,26 +401,26 @@ class Button:
 """From here is instantiations and calling functions """
 
 # sound mute
-main_sound_button = Button("8bitwonder.ttf", 15, 740, 10, color["white"], "Mute sound", False, True, "img/backgroundsound1.png")
-main_sound_button_off = Button("8bitwonder.ttf", 15, -200, 10, color["white"], "Mute sound", False, True, "img/backgroundsound0.png")
+main_sound_button = Button("font/8bitwonder.ttf", 15, 740, 10, color["white"], "Mute sound", False, True, "img/backgroundsound1.png")
+main_sound_button_off = Button("font/8bitwonder.ttf", 15, -200, 10, color["white"], "Mute sound", False, True, "img/backgroundsound0.png")
 
 # press backspace text
 press_backspace_text = "Press backspace to\nreturn to the main menu"
 
 # Main Menu buttons
-main_mainmenu_button = Button("8bitwonder.ttf", 84, screenwidth / 2, 100, color['white'], "N back", True)
-main_start_button = Button("8bitwonder.ttf", 32, screenwidth / 2, 220, color['white'], "start", True)
-main_howtoplay_button = Button("8bitwonder.ttf", 32, screenwidth / 2, 320, color['white'], "how to play", True)
-main_credit_button = Button("8bitwonder.ttf", 32, screenwidth / 2, 420, color['white'], "credits", True)
-main_options_button = Button("8bitwonder.ttf", 32, screenwidth / 2, 520, color["white"], "options", True)
-main_exit_button = Button("8bitwonder.ttf", 32, screenwidth / 2, 620, color['white'], "exit", True)
+main_mainmenu_button = Button("font/8bitwonder.ttf", 84, screenwidth / 2, 100, color['white'], "N back", True)
+main_start_button = Button("font/8bitwonder.ttf", 32, screenwidth / 2, 220, color['white'], "start", True)
+main_howtoplay_button = Button("font/8bitwonder.ttf", 32, screenwidth / 2, 320, color['white'], "how to play", True)
+main_credit_button = Button("font/8bitwonder.ttf", 32, screenwidth / 2, 420, color['white'], "credits", True)
+main_options_button = Button("font/8bitwonder.ttf", 32, screenwidth / 2, 520, color["white"], "options", True)
+main_exit_button = Button("font/8bitwonder.ttf", 32, screenwidth / 2, 620, color['white'], "exit", True)
 
 # Main Menu key scroll X
-main_x_button = Button("8bitwonder.ttf", 24, screenwidth / 2 - 200, 0, color['white'], "*", False)
+main_x_button = Button("font/8bitwonder.ttf", 24, screenwidth / 2 - 200, 0, color['white'], "*", False)
 
 # How to play buttons
-howtoplay_title_button = Button("8bitwonder.ttf", 32, 250, 220, color['white'], "How to play")
-howtoplay_back_button = Button("8bitwonder.ttf", 42, 250, 520, color['white'], "Back")
+howtoplay_title_button = Button("font/8bitwonder.ttf", 32, 250, 220, color['white'], "How to play")
+howtoplay_back_button = Button("font/8bitwonder.ttf", 42, 250, 520, color['white'], "Back")
 texts = {"Let's learn 2 back": [screenwidth / 2, 240],
          "A new number is displayed\nEvery 5 seconds":[screenwidth / 2, 210],
          5:[650,380],
@@ -433,29 +433,29 @@ howtoplay_back_button.rect.center = screenwidth / 2, screenheight / 2 + 300
 lst_practice_answer = [" "," "]
 
 # Credit Menu buttons
-credit_title_button = Button("8bitwonder.ttf", 42, 250, 220, color['white'], "Creator")
-credit_made_by_button = Button("8bitwonder.ttf", 64, 250, 320, color['white'], "Jinsung Kim")
-credit_back_button = Button("8bitwonder.ttf", 42, 250, 520, color['white'], "Back")
+credit_title_button = Button("font/8bitwonder.ttf", 42, 250, 220, color['white'], "Creator")
+credit_made_by_button = Button("font/8bitwonder.ttf", 64, 250, 320, color['white'], "Jinsung Kim")
+credit_back_button = Button("font/8bitwonder.ttf", 42, 250, 520, color['white'], "Back")
 credit_email = "jsk.jinsung@gmail.com"
 credit_title_button.rect.center = screenwidth / 2, screenheight / 2 - 200
 credit_made_by_button.rect.center = screenwidth / 2, screenheight / 2 - 100
 credit_back_button.rect.center = screenwidth / 2, screenheight / 2 + 200
 
 # Option menu buttons
-options_title_button = Button("8bitwonder.ttf", 42, screenwidth / 2, screenheight / 2 - 300, color["white"], "Options", True)
-options_n_back_text = Button("gameplay.ttf", 32, 150, 250, color["white"], "# n", True)
-options_number_of_questions_text1 = Button("8bitwonder.ttf", 20, 150, 400, color["white"], "number", True)
-options_number_of_questions_text2 = Button("8bitwonder.ttf", 20, 150, 430, color["white"], "of", True)
-options_number_of_questions_text3 = Button("8bitwonder.ttf", 20, 150, 460, color["white"], "questions", True)
-options_2back = Button("8bitwonder.ttf", 32, 360, 250, color["white"], "2", True)
-options_3back = Button("8bitwonder.ttf", 32, 440, 250, color["white"], "3", True)
-options_4back = Button("8bitwonder.ttf", 32, 520, 250, color["white"], "4", True)
-options_5back = Button("8bitwonder.ttf", 32, 600, 250, color["white"], "5", True)
-options_6back = Button("8bitwonder.ttf", 32, 680, 250, color["white"], "6", True)
-options_low_number_of_questions = Button("8bitwonder.ttf", 20, 350, 430, color["white"], "Low", True)
-options_med_number_of_questions = Button("8bitwonder.ttf", 20, 530, 430, color["white"], "Med", True)
-options_high_number_of_questions = Button("8bitwonder.ttf", 20, 710, 430, color["white"], "High", True)
-options_back_button = Button("8bitwonder.ttf", 42, 250, 520, color["white"], "Back")
+options_title_button = Button("font/8bitwonder.ttf", 42, screenwidth / 2, screenheight / 2 - 300, color["white"], "Options", True)
+options_n_back_text = Button("font/gameplay.ttf", 32, 150, 250, color["white"], "# n", True)
+options_number_of_questions_text1 = Button("font/8bitwonder.ttf", 20, 150, 400, color["white"], "number", True)
+options_number_of_questions_text2 = Button("font/8bitwonder.ttf", 20, 150, 430, color["white"], "of", True)
+options_number_of_questions_text3 = Button("font/8bitwonder.ttf", 20, 150, 460, color["white"], "questions", True)
+options_2back = Button("font/8bitwonder.ttf", 32, 360, 250, color["white"], "2", True)
+options_3back = Button("font/8bitwonder.ttf", 32, 440, 250, color["white"], "3", True)
+options_4back = Button("font/8bitwonder.ttf", 32, 520, 250, color["white"], "4", True)
+options_5back = Button("font/8bitwonder.ttf", 32, 600, 250, color["white"], "5", True)
+options_6back = Button("font/8bitwonder.ttf", 32, 680, 250, color["white"], "6", True)
+options_low_number_of_questions = Button("font/8bitwonder.ttf", 20, 350, 430, color["white"], "Low", True)
+options_med_number_of_questions = Button("font/8bitwonder.ttf", 20, 530, 430, color["white"], "Med", True)
+options_high_number_of_questions = Button("font/8bitwonder.ttf", 20, 710, 430, color["white"], "High", True)
+options_back_button = Button("font/8bitwonder.ttf", 42, 250, 520, color["white"], "Back")
 options_back_button.rect.center = screenwidth / 2, screenheight / 2 + 200
 
 # some underline that indicates where the cursor is
@@ -475,14 +475,14 @@ pause_text = "Paused"
 press_esc_to_pause_text = "<Esc> : pause"
 press_right_to_o_text = "<Right key> : 'O'" 
 press_left_to_x_text = "<Left key> : 'X' " 
-pause_button = Button("8bitwonder.ttf", 15, screenwidth / 2, 365, color["black"], " ", True, True, "img/pause.png")
-main_menu_text = Button("gameplay.ttf", 30, screenwidth / 2, 540, color["white"], "Main Menu", True)
-press_esc_text = Button("KGPrimaryPenmanship.ttf", 50, screenwidth / 2, 470, color["white"], "Press <ESC> to continue", True)
-quit_text = Button("gameplay.ttf", 30, screenwidth / 2, 600, color["white"], "Quit", True)
-paused_sound_button = Button("8bitwonder.ttf", 15, 600, 170, color["white"], "Mute sound", False, True, "img/backgroundsound1.png")
+pause_button = Button("font/8bitwonder.ttf", 15, screenwidth / 2, 365, color["black"], " ", True, True, "img/pause.png")
+main_menu_text = Button("font/gameplay.ttf", 30, screenwidth / 2, 540, color["white"], "Main Menu", True)
+press_esc_text = Button("font/KGPrimaryPenmanship.ttf", 50, screenwidth / 2, 470, color["white"], "Press <ESC> to continue", True)
+quit_text = Button("font/gameplay.ttf", 30, screenwidth / 2, 600, color["white"], "Quit", True)
+paused_sound_button = Button("font/8bitwonder.ttf", 15, 600, 170, color["white"], "Mute sound", False, True, "img/backgroundsound1.png")
 
 # current n-back status
-current_nback_text_font = pygame.font.Font("gameplay.ttf", 20)
+current_nback_text_font = pygame.font.Font("font/gameplay.ttf", 20)
 current_nback_text_content = current_nback_text_font.render(str(current_nback) + " Back", True, color["white"])
 
 # start, finish, car, dashboard images
@@ -494,7 +494,7 @@ screen_image = Object(screenwidth / 2, 600, 100, 100, 1, True, True, "img/tablet
 
 # countdown before start
 countdown_before_start = -4
-countdown_before_start_font = pygame.font.Font("gameplay.ttf", 130)
+countdown_before_start_font = pygame.font.Font("font/gameplay.ttf", 130)
 countdown_before_start_content = countdown_before_start_font.render(str(countdown_before_start), True, color["white"])
 countdown_before_start_content_rect = countdown_before_start_content.get_rect()
 countdown_before_start_content_rect.x = screenwidth / 2 - 40
@@ -507,7 +507,7 @@ counter = 0
 
 # counter for countdown before next number
 counter_for_next_number = 5
-counter_for_next_number_font = pygame.font.Font("gameplay.ttf",25)
+counter_for_next_number_font = pygame.font.Font("font/gameplay.ttf",25)
 counter_for_next_number_content = counter_for_next_number_font.render(str(counter_for_next_number), True, color["white"])
 counter_for_next_number_content_rect = counter_for_next_number_content.get_rect()
 counter_for_next_number_content_rect.x = -200
@@ -526,22 +526,22 @@ frame_around_o_x_buttons_rect.center = -200, -200
 # score screen
 
 rectangle_outside = pygame.rect.Rect(50, 40, 700, 700)
-result_text = Button("8bitwonder.ttf", 55, screenwidth / 2, 100, color["white"], "Result", True)
-n_back_text = Button("gameplay.ttf", 20, 165, 200, color["white"], "n-back", True)
-questions = Button("gameplay.ttf", 20, 165, 270, color["white"], "questions", True)
-correct_answers = Button("gameplay.ttf", 20, 165, 410, color["white"], "correct answer", True)
-user_answers = Button("gameplay.ttf", 20, 165, 540, color["white"], "your answer", True)
-result_percentage_text = Button("gameplay.ttf", 20, 165, 645, color["white"], "Score", True)
-go_back_to_main_menu_button = Button("gameplay.ttf", 20, 190, 692, color["white"], "Press enter key to go to Main menu")
+result_text = Button("font/8bitwonder.ttf", 55, screenwidth / 2, 100, color["white"], "Result", True)
+n_back_text = Button("font/gameplay.ttf", 20, 165, 200, color["white"], "n-back", True)
+questions = Button("font/gameplay.ttf", 20, 165, 270, color["white"], "questions", True)
+correct_answers = Button("font/gameplay.ttf", 20, 165, 410, color["white"], "correct answer", True)
+user_answers = Button("font/gameplay.ttf", 20, 165, 540, color["white"], "your answer", True)
+result_percentage_text = Button("font/gameplay.ttf", 20, 165, 645, color["white"], "Score", True)
+go_back_to_main_menu_button = Button("font/gameplay.ttf", 20, 190, 692, color["white"], "Press enter key to go to Main menu")
 number_of_correct_questions = 0
-n_back_answer = Button("gameplay.ttf", 20, 520, 200, color["white"], str(current_nback), True)
+n_back_answer = Button("font/gameplay.ttf", 20, 520, 200, color["white"], str(current_nback), True)
 
 def update_score():
     global lst_rendered_contents_2, score_update_control
     if score_update_control == False:
         score_update_control = True
         for each_n in lst:
-            each_number_font = pygame.font.Font("gameplay.ttf", 20)
+            each_number_font = pygame.font.Font("font/gameplay.ttf", 20)
             each_number_content = each_number_font.render(str(each_n), True, color["white"])
             lst_rendered_contents_2.append(each_number_content)
 
@@ -1364,7 +1364,7 @@ while run:
         elif 30 < len(lst_rendered_contents_2):            
             long_lst = []
             for each in lst:
-                font15 = pygame.font.Font("gameplay.ttf",15)
+                font15 = pygame.font.Font("font/gameplay.ttf",15)
                 each_content = font15.render(str(each), True, color["white"])
                 long_lst.append(each_content)
             for i, e in enumerate(long_lst):
@@ -1380,12 +1380,12 @@ while run:
         # correct answer 
         if len(lst_answer) <= 10:
             for index, each in enumerate(lst_answer):
-                answer_font = pygame.font.Font("gameplay.ttf", 20)
+                answer_font = pygame.font.Font("font/gameplay.ttf", 20)
                 answer_content = answer_font.render(str(each), True, color["white"])
                 screen.blit(answer_content, ((280 + (470 * (index + 1) / (len(lst_answer) + 1))), 395))
         elif 10 < len(lst_answer):
             for index, each in enumerate(lst_answer):
-                answer_font = pygame.font.Font("gameplay.ttf", 20)
+                answer_font = pygame.font.Font("font/gameplay.ttf", 20)
                 answer_content = answer_font.render(str(each), True, color["white"])
                 if index <= 9:
                     screen.blit(answer_content, ((280 + (470 * (index + 1) / (11))), 395))
@@ -1397,18 +1397,18 @@ while run:
         # user answer
         if len(lst_user_answer) <= 10:
             for index, each in enumerate(lst_user_answer):
-                user_answer_font = pygame.font.Font("gameplay.ttf", 20)
+                user_answer_font = pygame.font.Font("font/gameplay.ttf", 20)
                 if each == " ":
                     each = "n/a"
-                    user_answer_font = pygame.font.Font("gameplay.ttf", 10)
+                    user_answer_font = pygame.font.Font("font/gameplay.ttf", 10)
                 user_answer_content = user_answer_font.render(str(each), True, color["white"])
                 screen.blit(user_answer_content,((280 + (470 * (index + 1) / (len(lst_user_answer) + 1))), 530))
         elif len(lst_user_answer) > 10:
             for index, each in enumerate(lst_user_answer):
-                user_answer_font = pygame.font.Font("gameplay.ttf", 20)
+                user_answer_font = pygame.font.Font("font/gameplay.ttf", 20)
                 if each == " ":
                     each = "n/a"
-                    user_answer_font = pygame.font.Font("gameplay.ttf", 10)
+                    user_answer_font = pygame.font.Font("font/gameplay.ttf", 10)
                 user_answer_content = user_answer_font.render(str(each), True, color["white"])
                 if index <= 9:
                     screen.blit(user_answer_content, ((280 + (470 * (index + 1) / (11))), 530))
@@ -1443,7 +1443,7 @@ while run:
                     print(f"|{lst_user_answer[i]}", end="|")
             print(f"\n\nScore : {round(percentage,2)} %")
             print("############################################")
-        percentage_font = pygame.font.Font("gamecube.ttf", 20)
+        percentage_font = pygame.font.Font("font/gamecube.ttf", 20)
         percentage_message = percentage_font.render(str(round(percentage, 2)) + " %", True, color["white"])
         if percentage >= 80:
             percentage_message = percentage_font.render(str(round(percentage,2)) + " %", True, color["green"])
