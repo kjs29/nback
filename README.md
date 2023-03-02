@@ -106,77 +106,25 @@ In the game, press `ESC` key to pause. `ESC` again to unpause or resume the game
 
 ---
 
-# Download the game from Github (Windows, MacOS)
+# Download the game 
 
-## Download Python. Python should already be installed to play the game.
+## Clone the repo from Github (Windows, MacOS)
 
-> If you already have python 3.0 or higher, skip this part. If you don't have python, download python first [https://www.python.org](https://www.python.org/downloads/).
-
-To check the version of the python installed in your computer,
-
-For window user, open command prompt and type
+On your terminal type the commands below
 
 ```
-python --version
-```
-
-For mac user, open terminal and type
-
-```
-python3 --version
-```
-
-## To play the game, download `pygame` module please.
-
-## 1. Install `pygame`
-
-For **Windows** users, write the code below in the command prompt,
-
-```
-py -m pip install -U pygame --user
-```
-
-For **Mac** users, write the code below in the terminal
-
-```
-python3 -m pip install -U pygame --user
-```
-
-or
-
-```
-pip3 install pygame --pre
-```
-
-for users who use python 3.11.
-
-More information on [https://www.pygame.org](https://www.pygame.org/wiki/GettingStarted)
-
-## 2. Download git (If you downloaded git already, skip this part)
-
-### Download git
-
-> Go to [https://git-scm.com](https://git-scm.com) and download git.
-
-## 3. Create a folder to clone (download) the game files.
-
-### - Create a folder 
-or on Command Prompt / Terminal
-```
-$ mkdir programming
-```
-
-### - Open the Command Prompt / Terminal
-### - Make sure that you are at folder directory in there and type
-```
-cd programming
+cd ~
+mkdir pygame
+cd pygame
+python3 -m venv env
+source env/bin/activate
 git clone https://github.com/kjs29/nback.git
+cd nback
+pip install -r requirements.txt
+python main.py
 ```
-### - You will see that the files are downloaded
-### - Open `main.py` and run it.
 
-# Or Directly download from https://kjs29.itch.io/nback (Windows only)
+## Download from itch.io (Windows only)
 
-Thank you for playing.
+https://kjs29.itch.io/nback
 
-Any inquiries : jsk.jinsung@gmail.com
