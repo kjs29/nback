@@ -8,9 +8,9 @@
 
 # Download the game 
 
-## Clone the repo from Github (Windows, MacOS)
+## Clone the repo from Github (MacOS or Windows)
 
-Copy & Paste the following code below in your terminal - The game will be downloaded in the folder called in `~/Desktop/pygame_nback`
+Copy & Paste the following code below in your terminal - The game will be downloaded in the folder named `~/Desktop/pygame_nback`
 
 <em>MacOS or Linux</em>
 
