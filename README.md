@@ -113,9 +113,9 @@ In the game, press `ESC` key to pause. `ESC` again to unpause or resume the game
 On your terminal type the commands below
 
 ```
-cd ~
-mkdir pygame
-cd pygame
+cd ~/Desktop
+mkdir pygame_nback
+cd pygame_nback
 python3 -m venv env
 source env/bin/activate
 git clone https://github.com/kjs29/nback.git
