@@ -25,7 +25,7 @@ cd nback && pip install -r requirements.txt && python main.py
 
 <em>Windows</em>
 
-Replace <username> with your own username.
+Replace `<username>` with your own username.
 
 ```
 cd C:\Users\<username>\Desktop && mkdir pygame_nback && cd pygame_nback
@@ -54,7 +54,7 @@ cd ~/Desktop/pygame_nback && python main.py
 
 <em>Windows</em>
 
-Replace <username> with your own username.
+Replace `<username>` with your own username.
 
 ```
 cd C:\Users\<username>\Desktop\pygame_nback && python main.py
