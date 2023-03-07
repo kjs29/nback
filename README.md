@@ -47,9 +47,11 @@ TLDR; 1. To increase intelligence 2. To have fun with my Python knowledge
 
 ### This game is my first project after learning the basics of Python. I heard that people can make games with [pygame](https://www.pygame.org/news), and creating games can teach a lot about programming in general so I decided to give it a try.
 
-# What is 'N back'?
+# What is 'N back'? Can you tell me how to play it?
 
-### The n-back game is a fun and challenging brain exercise. 
+## What is N back?
+
+#### The n-back game is a fun and challenging brain exercise. 
 
 The game involves remembering a sequence of items (like colors, letters, or shapes) that are presented to you, one at a time, 
 
@@ -73,17 +75,17 @@ It's a great way to exercise your memory and attention skills, and can be a fun 
 >
 > The n-back task was developed by Wayne Kirchner for his research into short-term memory; he used it to assess age differences in memory tasks of "rapidly changing information".
 
-source - https://en.wikipedia.org/wiki/N-back
+> source - https://en.wikipedia.org/wiki/N-back
 
-# How to play
+## How to play 
 
-We can play 2 back, 3 back, 4 back, and so on.. The higher the N is, more difficult it gets!
+We can play 2 back, 3 back, 4 back, and so on.. The higher the N is, more difficult the game gets!
 
-But, let's say we are playing 2 back right now.
+But, for now let's say we are playing 2 back right now.
 
-In the game, there will be numbers shown to us.
+In the game, there will be numbers shown to us, the order matters so you should memorize both the number and the order as well.
 
-One number will show at a time and will disappear after it is shown.
+One number will show at a time for 5 seconds and will disappear after 5 secs.
 
 ### `3`
 
@@ -109,11 +111,19 @@ Or here is the detailed explanation from Wikipedia.org. [N - back on Wikipedia](
 
 ## Key control
 
-'X' : `<(Left Key)` or `mouse click` on 'X' button
+In Game:
 
-'O' : `>(Right Key)` or `mouse click` on 'O' button
+`<(Left Key)` or `mouse click`: Click on 'X' button.
 
-In the game, press `ESC` key to pause. `ESC` again to unpause or resume the gameplay.
+`>(Right Key)` or `mouse click`: Click on 'O' button.
+
+`ESC`: Pause the game. `ESC` again to unpause or resume the gameplay.
+
+Game Menu:
+
+Upkey, Downkey to move up/down in the menu.
+
+`ESC` key to exit the game.
 
 ## Game Menu
 
@@ -129,6 +139,8 @@ In the game, press `ESC` key to pause. `ESC` again to unpause or resume the game
 
     - Number of questions (Low, Med, High)
         > Low : #N * 2
+        > 
+        > For example, if #N = 4 then there will be 8 arbitrary numbers show. 
         >
         > Med : #N * 4
         >
