@@ -140,7 +140,7 @@ Upkey, Downkey to move up/down in the menu.
     - Number of questions (Low, Med, High)
         > Low : #N * 2
         > 
-        > For example, if #N = 4 then there will be 8 arbitrary numbers show. 
+        > For example, if #N = 4 then there will be 8 arbitrary numbers. 
         >
         > Med : #N * 4
         >
