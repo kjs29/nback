@@ -8,9 +8,11 @@
 
 # Download the game 
 
-## Clone the repo from Github (MacOS or Windows)
+## Method 1 - Clone the repo from Github (MacOS or Windows)
 
-Copy & Paste the following code below in your terminal - The game will be downloaded in the folder named `~/Desktop/pygame_nback`
+Copy & Paste the following code below in your terminal.
+
+The game will be downloaded in the folder named `~/Desktop/pygame_nback` and start playing the game automatically.
 
 <em>MacOS or Linux</em>
 
@@ -29,9 +31,13 @@ git clone https://github.com/kjs29/nback.git
 cd nback && pip install -r requirements.txt && python main.py
 ```
 
-## Download from itch.io (Windows only)
+## Method 2 (Windows only for now) - Download from itch.io
 
-https://kjs29.itch.io/nback
+1. https://kjs29.itch.io/nback
+
+2. Unzip the file you downloaded 
+
+3. Run `main.exe` file
 
 # The purpose of the project
 
