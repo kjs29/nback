@@ -12,7 +12,7 @@
 
 Copy & Paste the following code below in your terminal.
 
-The game will be downloaded in the folder named `~/Desktop/pygame_nback` and start playing the game automatically.
+The game will be downloaded in the folder named `~/Desktop/pygame_nback`, wait a few seconds, and it will start playing automatically.
 
 <em>MacOS or Linux</em>
 
