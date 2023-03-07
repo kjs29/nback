@@ -35,11 +35,11 @@ https://kjs29.itch.io/nback
 
 # The purpose of the project
 
-### There are probably several aspects of one's intelligence.
+TLDR; 1. To increase intelligence 2. To have fun with my Python knowledge
 
-### I believe that an individual's intelligence can increase with practice the same way you would exercise and build muscle. I was watching a show that introduced this game called 'N back' and it looked challenging but interesting.
+### There are probably several aspects of one's intelligence, but I believe that an individual's intelligence can increase with practice the same way you would exercise and build muscle. I was watching a show that introduced this game called 'N back' as a brain activity to increase one's IQ.
 
-### This game is my first project after learning Python. I heard that people can make games with [pygame](https://www.pygame.org/news), and creating games can teach a lot about programming in general so I decided to give it a try.
+### This game is my first project after learning the basics of Python. I heard that people can make games with [pygame](https://www.pygame.org/news), and creating games can teach a lot about programming in general so I decided to give it a try.
 
 # What is 'N back'?
 
