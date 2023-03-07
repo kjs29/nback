@@ -24,8 +24,11 @@ cd nback && pip install -r requirements.txt && python main.py
 ```
 
 <em>Windows</em>
+
+Replace <username> with your own username.
+
 ```
-cd %userprofile%\Desktop && mkdir pygame_nback && cd pygame_nback
+cd C:\Users\<username>\Desktop && mkdir pygame_nback && cd pygame_nback
 python -m venv env && .\env\Scripts\activate
 git clone https://github.com/kjs29/nback.git
 cd nback && pip install -r requirements.txt && python main.py
@@ -38,6 +41,24 @@ cd nback && pip install -r requirements.txt && python main.py
 2. Unzip the file you downloaded 
 
 3. Run `main.exe` file
+
+## How to run the game once the game is downloaded
+
+<em>MacOS or Linux</em>
+
+Go to terminal and type
+
+```
+cd ~/Desktop/pygame_nback && python main.py
+```
+
+<em>Windows</em>
+
+Replace <username> with your own username.
+
+```
+cd C:\Users\<username>\Desktop\pygame_nback && python main.py
+```
 
 # The purpose of the project
 
