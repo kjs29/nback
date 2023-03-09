@@ -20,7 +20,7 @@ The game will be downloaded in the folder named `~/Desktop/pygame_nback`, wait a
 cd ~/Desktop && mkdir pygame_nback && cd pygame_nback
 python3 -m venv env && source env/bin/activate
 git clone https://github.com/kjs29/nback.git
-cd nback && pip install -r requirements.txt && python main.py
+cd nback && pip install -r requirements.txt && python main.py && deactivate
 ```
 
 <em>Windows</em>
@@ -31,7 +31,7 @@ Replace `<username>` with your own username.
 cd C:\Users\<username>\Desktop && mkdir pygame_nback && cd pygame_nback
 python -m venv env && .\env\Scripts\activate
 git clone https://github.com/kjs29/nback.git
-cd nback && pip install -r requirements.txt && python main.py
+cd nback && pip install -r requirements.txt && python main.py && deactivate
 ```
 
 ## Method 2 (Windows only for now) - Download from itch.io
@@ -42,14 +42,14 @@ cd nback && pip install -r requirements.txt && python main.py
 
 3. Run `main.exe` file
 
-## How to run the game once the game is downloaded
+## How to run the game again once the game is downloaded
 
 <em>MacOS or Linux</em>
 
 Go to terminal and type
 
 ```
-cd ~/Desktop/pygame_nback && source env/bin/activate && python main.py
+cd ~/Desktop/pygame_nback && source env/bin/activate && cd nback && python main.py && deactivate
 ```
 
 <em>Windows</em>
@@ -57,7 +57,7 @@ cd ~/Desktop/pygame_nback && source env/bin/activate && python main.py
 Replace `<username>` with your own username.
 
 ```
-cd C:\Users\<username>\Desktop\pygame_nback && .\env\Scripts\activate && python main.py
+cd C:\Users\<username>\Desktop\pygame_nback && .\env\Scripts\activate && cd nback && python main.py && deactivate
 ```
 
 # The purpose of the project
