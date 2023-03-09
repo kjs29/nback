@@ -49,7 +49,7 @@ cd nback && pip install -r requirements.txt && python main.py
 Go to terminal and type
 
 ```
-cd ~/Desktop/pygame_nback && python main.py
+cd ~/Desktop/pygame_nback && source env/bin/activate && python main.py
 ```
 
 <em>Windows</em>
@@ -57,7 +57,7 @@ cd ~/Desktop/pygame_nback && python main.py
 Replace `<username>` with your own username.
 
 ```
-cd C:\Users\<username>\Desktop\pygame_nback && python main.py
+cd C:\Users\<username>\Desktop\pygame_nback && .\env\Scripts\activate && python main.py
 ```
 
 # The purpose of the project
