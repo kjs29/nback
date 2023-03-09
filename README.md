@@ -17,10 +17,7 @@ The game will be downloaded in the folder named `~/Desktop/pygame_nback`, wait a
 <em>MacOS or Linux</em>
 
 ```
-cd ~/Desktop && mkdir pygame_nback && cd pygame_nback
-python3 -m venv env && source env/bin/activate
-git clone https://github.com/kjs29/nback.git
-cd nback && pip install -r requirements.txt && python main.py && deactivate
+cd ~/Desktop && mkdir pygame_nback && cd pygame_nback && python3 -m venv env && source env/bin/activate && git clone https://github.com/kjs29/nback.git && cd nback && pip install -r requirements.txt && python main.py && deactivate
 ```
 
 <em>Windows</em>
