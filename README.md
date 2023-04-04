@@ -10,6 +10,8 @@
 
 ## Method 1 - Clone the repo from Github
 
+Make sure you downloaded Python, pip and Git installed on your system before running the commands.
+
 Copy & Paste the following code below in your terminal.
 
 The game will be downloaded in the folder named `~/Desktop/pygame_nback`, wait a few seconds, and it will start playing automatically.
