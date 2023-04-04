@@ -8,7 +8,7 @@
 
 # Download the game 
 
-## Method 1 - Clone the repo from Github (MacOS or Windows)
+## Method 1 - Clone the repo from Github
 
 Copy & Paste the following code below in your terminal.
 
@@ -25,10 +25,7 @@ cd ~/Desktop && mkdir pygame_nback && cd pygame_nback && python3 -m venv env && 
 Replace `<username>` with your own username.
 
 ```
-cd C:\Users\<username>\Desktop && mkdir pygame_nback && cd pygame_nback
-python -m venv env && .\env\Scripts\activate
-git clone https://github.com/kjs29/nback.git
-cd nback && pip install -r requirements.txt && python main.py && deactivate
+cd C:\Users\<username>\Desktop && mkdir pygame_nback && cd pygame_nback && python -m venv env && .\env\Scripts\activate && git clone https://github.com/kjs29/nback.git && cd nback && pip install -r requirements.txt && python main.py && deactivate
 ```
 
 ## Method 2 - Download from itch.io
