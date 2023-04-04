@@ -31,13 +31,13 @@ git clone https://github.com/kjs29/nback.git
 cd nback && pip install -r requirements.txt && python main.py && deactivate
 ```
 
-## Method 2 (Windows only for now) - Download from itch.io
+## Method 2 - Download from itch.io
 
 1. Go to https://kjs29.itch.io/nback and click download button
 
 2. Unzip the file you downloaded 
 
-3. Run `main.exe` file
+3. Run `main.exe` or `main.app` file
 
 ## How to run the game again once the game is downloaded
 
